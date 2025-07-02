@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Markers</title>
+    <link rel="icon" type="image/svg+xml" href="/images/sunlogo.svg">
+    <script type="module" crossorigin src="/assets/index-BxPG3TBB.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DCyKvq7I.css">
+  </head>
+  <body>
+    <header>
+      <img id="sunlogo" src="/images/sunlogo.svg" alt="">
+      <h1 id="apptitle">Solar Markers</h1>
+    </header>
+    <main>
+      <section id="info">
+	<section id="selected-location">
+	  <div id = "auto-locate">
+	    <div>Locating..</div>
+	    <div id="circle"></div>
+	    <div id="advise">Click map or search to override.</div>
+	    <!-- <fieldset> -->
+	    <!--   <Legend>Autolocate</Legend> -->
+	    <!--   <div id="locate-progress"> -->
+	    <!-- 	<div id="bar"></div> -->
+	    <!--   </div> -->
+	    <!--   <div id="locate-info">Click map or search to override.</div> -->
+	    <!-- </fieldset> -->
+	  </div>
+	  <div id="place" hidden>
+	    <fieldset>
+	      <legend>Location</legend>
+	      <textarea class="address" type="text" id="location" disabled> </textarea>
+	    </fieldset>
+	  </div>
+	</section>
+      </section>
+      <section id="search">
+	<div id="search">
+	  <div id="search-bar">
+	    <input type="search" id="search-input" placeholder="Search location..." value="">
+	    <button type="submit" id="search-button">Search</button>
+	  </div>
+	  <div id="search-result"></div>
+	</div>
+      </section>
+      <section id="mapview"></section>
+    </main>
+  </body>
+</html>
